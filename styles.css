@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #20201e;
+  background: #f5f3ef;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 24px;
+}
+
+.content {
+  width: min(100%, 900px);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #77736d;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 36px;
+}
+
+nav a,
+.text-link {
+  color: #55534f;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+nav a:hover,
+.text-link:hover {
+  color: #111;
+}
+
+.sketch-content {
+  width: min(100%, 960px);
+  text-align: center;
+}
+
+.sketch-content h1 {
+  margin-bottom: 14px;
+  font-size: clamp(3.5rem, 9vw, 6rem);
+}
+
+.sketch-description {
+  margin: 0 0 24px;
+  color: #77736d;
+  line-height: 1.6;
+}
+
+#sketch-holder {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#sketch-holder canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.sketch-nav {
+  gap: 14px 28px;
+}
